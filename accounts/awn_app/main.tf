@@ -12,7 +12,7 @@ module "ftp_sg" {
 }
 
 # Fetch the EC2 instance by ID
-data "aws_instance" "aws.inst.4.2024" {
+data "aws_instance" "aws_inst_4_2024" {
   instance_id = "i-0406fd74a62736614"  # Replace with your actual instance ID
 }
 
