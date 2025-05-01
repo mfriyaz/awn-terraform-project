@@ -1,6 +1,6 @@
 # Module for creating the SG
 module "ftp_mssql_sg" {
-  source      = "../../modules/security_group"
+  source      = "../../modules/security_group_app_server"
   name        = "ec2-ftp-mssql-access"
   description = "Allow FTP and MSSQL access"
   vpc_id      = "vpc-0770331a6f17a5f46"
