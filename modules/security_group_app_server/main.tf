@@ -15,6 +15,12 @@ resource "aws_security_group" "sg_id" {
     protocol    = "tcp"
     cidr_blocks = var.allowed_cidrs
   }
+ingress {
+    from_port   = 3389
+    to_port     = 3389
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidrs
+  }
 
   egress {
     from_port   = 0
