@@ -4,8 +4,14 @@ resource "aws_security_group" "sg_id" {
   vpc_id      = var.vpc_id
 
   ingress {
-    from_port   = 1433
-    to_port     = 1433
+    from_port   = 990
+    to_port     = 990
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidrs
+  }
+  ingress {
+    from_port   = 14395
+    to_port     = 14397
     protocol    = "tcp"
     cidr_blocks = var.allowed_cidrs
   }
