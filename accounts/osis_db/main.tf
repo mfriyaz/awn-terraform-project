@@ -4,7 +4,7 @@ module "osis_mssql_sg" {
   name        = "ec2-mssql-access"
   description = "Allow MSSQL access"
   vpc_id      = "vpc-01541d8a67c16ca49"
-  allowed_cidrs = ["192.60.30.0/24"]
+  allowed_cidrs = ["10.60.30.0/24"]
   tags = {
     Environment = "OSIS_DB"
     ManagedBy   = "Terraform"
