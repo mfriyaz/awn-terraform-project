@@ -12,7 +12,7 @@ module "osis_ftp_sg" {
 }
 
 # Fetch the EC2 instance by ID
-data "aws_instance" "aws_inst_4_2024" {
+data "aws_instance" "OSIS-Live-Instance" {
   instance_id = "i-04536d1205e5d23f9"  # Replace with your actual instance ID
 }
 
