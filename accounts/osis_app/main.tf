@@ -1,6 +1,6 @@
 # Module for creating the SG
 module "osis_ftp_sg" {
-  source      = "../../modules/security_group_app_server"
+  source      = "../../modules/security_group_osis_app_server"
   name        = "ec2-ftp-access"
   description = "Allow FTP access"
   vpc_id      = "vpc-f505c791"
