@@ -4,7 +4,7 @@ module "ftp_sg" {
   name        = "ec2-ftp-access"
   description = "Allow FTP access"
   vpc_id      = "vpc-0770331a6f17a5f46"
-  allowed_cidrs = ["106.219.179.12/32"]
+  allowed_cidrs = ["106.219.179.42/32"]
   tags = {
     Environment = "AWN_APP"
     ManagedBy   = "Terraform"
