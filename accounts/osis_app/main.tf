@@ -4,7 +4,7 @@ module "osis_ftp_sg" {
   name        = "ec2-ftp-access"
   description = "Allow FTP access"
   vpc_id      = "vpc-f505c791"
-  allowed_cidrs = ["106.219.179.148/32"]
+  allowed_cidrs = ["106.219.181.130/32"]
   tags = {
     Environment = "OSIS_APP"
     ManagedBy   = "Terraform"
