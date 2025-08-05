@@ -1,7 +1,7 @@
 #Module for create Security Group
 module "vmsdb_mssql_sg" {
     source = "../../modules/security_group"
-    name = ec2-mssql-access
+    name = "ec2-mssql-access"
     description = "Allow MSSQL access"
     vpc_id = "vpc-055fd4ec6ef5a9b38"
     allowed_cidrs = ["192.168.110.150/24"]
