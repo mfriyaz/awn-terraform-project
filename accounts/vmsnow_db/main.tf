@@ -4,7 +4,7 @@ module "vmsdb_mssql_sg" {
     name = "ec2-mssql-access"
     description = "Allow MSSQL access"
     vpc_id = "vpc-055fd4ec6ef5a9b38"
-    allowed_cidrs = ["106.219.183.156/24"]
+    allowed_cidrs = ["106.219.183.156/32"]
     tags = {
       Environment = "VMSNOW_DB"
       ManagedBy = "Terraform"
