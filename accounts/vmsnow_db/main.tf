@@ -17,6 +17,6 @@ data "aws_instance" "aws_inst_2_2024" {
 
 #Attach the SG to the instance's primary network interface
 resource "aws_network_interface_sg_attachment" "attach_sg" {
-    security_group_id = "module.vmsdb_mssql_sg.security_group_id"
+    security_group_id = module.vmsdb_mssql_sg.security_group_id
     network_interface_id = "eni-0a47e29882db84207"
   }
