@@ -4,7 +4,7 @@ module "ftp_sg" {
   name        = "ec2-ftp-access"
   description = "Allow FTP access"
   vpc_id      = "vpc-07cc34a429fb05169"
-  allowed_cidrs = ["106.219.183.55/32"]
+  allowed_cidrs = ["122.164.81.182/32"]
   tags = {
     Environment = "VMSNOW_APP"
     ManagedBy   = "Terraform"
