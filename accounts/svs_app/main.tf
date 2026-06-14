@@ -4,7 +4,7 @@ module "ftp_mssql_sg" {
   name        = "ec2-ftp-mssql-access"
   description = "Allow FTP and MSSQL access"
   vpc_id      = "vpc-0770331a6f17a5f46"
-  allowed_cidrs = ["106.219.179.8/32"]
+  allowed_cidrs = ["49.37.211.154/32"]
   tags = {
     Environment = "SVS_APP"
     ManagedBy   = "Terraform"
